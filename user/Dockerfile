@@ -6,7 +6,7 @@ RUN addgroup -S nzmgroup
 RUN adduser -S -D -h /app nzmuser nzmgroup
 RUN chown -R nzmuser:nzmgroup /app
 
-USER nzmuser
+USER nzmuser`
 
 COPY main.go /app
 
